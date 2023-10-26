@@ -26,8 +26,12 @@ function Home() {
         <Col md={6} className="home__bg" ></Col>
         
     </Row>
-    <img src="https://www.freecodecamp.org/news/content/images/2020/05/image-177.png" className='linediagram'></img>
-  </div>
+   <img
+  src="https://www.freecodecamp.org/news/content/images/2020/05/image-177.png"
+  className='linediagram'
+  alt="Description of the image" {/* Add a meaningful description here */}
+/>
+</div>
   )
 }
 
