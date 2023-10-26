@@ -13,13 +13,9 @@ function ViewMarkdown(){
 
     const [projectData,setProjectData]= useState("")
 
-    useEffect(()=>{
-      
-        loadUser()
-     
-    },[loadUser]);
+    
 
-    let loadUser=async()=>{
+    let loadUser = useCallback(async()=>{
         try{
             let project =await axios.get(`${API}/players/${id}`,{
                 method:"GET",
@@ -31,7 +27,13 @@ function ViewMarkdown(){
             setProjectData(project.data)
         } catch (error){
             console.log(error)
-        }
+        }, []);
+
+ useEffect(()=>{
+      
+        loadUser()
+     
+    },[loadUser]);
     
      }
      return(
