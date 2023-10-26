@@ -15,25 +15,26 @@ function ViewMarkdown(){
 
     
 
-    useEffect(()=>{
-      
-    let loadUser=async()=>{
-        try{
-            let project =await axios.get(`${API}/players/${id}`,{
-                method:"GET",
-                headers:{
-                    "x-auth-token" : localStorage.getItem("token")
-                };
-             loadUser()
-     
-    },[]);
-            console.log(project.data)
-            setProjectData(project.data)
-        } catch (error){
-            console.log(error)
+   useEffect(() => {
+    const loadUser = async () => {
+        try {
+            let project = await axios.get(`${API}/players/${id}`, {
+                method: "GET",
+                headers: {
+                    "x-auth-token": localStorage.getItem("token")
+                }
+            });
+            console.log(project.data);
+            setProjectData(project.data);
+        } catch (error) {
+            console.log(error);
         }
-    
-     }
+    };
+
+    loadUser(); // Call the function inside useEffect
+
+}, [id]); // Add id to the dependency array if it is used inside the useEffect callback
+
      return(
         <>
         <div className="viewcontainer">
