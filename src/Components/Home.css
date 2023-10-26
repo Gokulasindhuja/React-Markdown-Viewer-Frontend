@@ -1,0 +1,27 @@
+.home__bg{
+    background-image: url(https://ourcodeworld.com/public-media/articles/articleocw-598d8b864f7a9.png);
+    height: 92vh;
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+.home-message-icon{
+    margin-left: 10px;
+    display: inline-block;
+}
+/* .linediagram{
+    height: 92vh;
+    width: auto;
+    margin-left: 70px;
+} */
+img {
+    object-fit: contain;
+    width: 100%;
+    height:100%;
+  }
+
+.homecontainer{
+    margin: 20px;
+}
