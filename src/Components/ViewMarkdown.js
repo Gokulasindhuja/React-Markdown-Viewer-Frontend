@@ -15,25 +15,23 @@ function ViewMarkdown(){
 
     
 
-    let loadUser = useCallback(async()=>{
+    useEffect(()=>{
+      
+    let loadUser=async()=>{
         try{
             let project =await axios.get(`${API}/players/${id}`,{
                 method:"GET",
                 headers:{
                     "x-auth-token" : localStorage.getItem("token")
-                }
-            })
+                };
+             loadUser()
+     
+    },[]);
             console.log(project.data)
             setProjectData(project.data)
         } catch (error){
             console.log(error)
-        }, []);
-
- useEffect(()=>{
-      
-        loadUser()
-     
-    },[loadUser]);
+        }
     
      }
      return(
