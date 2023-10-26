@@ -28,8 +28,8 @@ function Home() {
     </Row>
    <img
   src="https://www.freecodecamp.org/news/content/images/2020/05/image-177.png"
-  className='linediagram'
-  alt="Description of the image" {/* Add a meaningful description here */}
+  className="linediagram"
+  alt="Description of the image" // Add a meaningful description here
 />
 </div>
   )
