@@ -3,7 +3,6 @@ import { Row, Col} from "react-bootstrap";
 import Button from 'react-bootstrap/Button';
 import { LinkContainer } from 'react-router-bootstrap';
 import "./Home.css";
-import {Link} from "react-router-dom"
 
 
 function Home() {
@@ -29,7 +28,7 @@ function Home() {
    <img
   src="https://www.freecodecamp.org/news/content/images/2020/05/image-177.png"
   className="linediagram"
-  alt="Description of the image" // Add a meaningful description here
+  alt="content" // Add a meaningful description here
 />
 </div>
   )
