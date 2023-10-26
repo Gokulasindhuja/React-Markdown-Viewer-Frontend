@@ -3,7 +3,7 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { Container, Row, Col } from "react-bootstrap";
 import "./Signup.css";
-import { Link, useNavigate,useParams} from "react-router-dom";
+import { useNavigate,useParams} from "react-router-dom";
 import { useFormik } from "formik";
 import * as yup from "yup";
 import axios from "axios";
