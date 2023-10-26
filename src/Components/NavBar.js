@@ -4,6 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/Button';
 import {LogOut} from "../Auth/LogOut";
+import { LinkContainer } from 'react-router-bootstrap';
 
 function NavBar() {
 
