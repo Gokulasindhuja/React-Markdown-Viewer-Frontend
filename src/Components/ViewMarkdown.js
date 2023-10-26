@@ -17,7 +17,7 @@ function ViewMarkdown(){
       
         loadUser()
      
-    },[])
+    },[loadUser]);
 
     let loadUser=async()=>{
         try{
