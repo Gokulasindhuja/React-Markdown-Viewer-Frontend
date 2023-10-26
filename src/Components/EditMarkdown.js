@@ -1,7 +1,6 @@
 import React, { useState,useEffect } from "react";
 import ReactMarkdown from "react-markdown";
 import { useNavigate, useParams } from "react-router-dom";
-import axios from "axios";
 import { API } from "../globle";
 import Button from 'react-bootstrap/Button';
 
@@ -20,7 +19,7 @@ export function EditMarkdown() {
        })
        .then((dt)=>dt.json())
        .then((details)=>setEditData(details))
-   },[])
+   },[id]);
    
 // useEffect(()=>{
       
