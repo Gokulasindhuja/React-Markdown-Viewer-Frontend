@@ -5,7 +5,7 @@ import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import PreviewIcon from '@mui/icons-material/Preview';
 import EditNoteIcon from '@mui/icons-material/EditNote';
 import DeleteIcon from '@mui/icons-material/Delete';
-import axios from "axios";
+import axios from 'axios';
 import Button from '@mui/material/Button';
 import { CheckAuth } from "../Auth/CheckAuth";
 import { LogOut } from "../Auth/LogOut";
