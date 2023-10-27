@@ -28,7 +28,7 @@ function Home() {
    <img
   src="https://www.freecodecamp.org/news/content/images/2020/05/image-177.png"
   className="linediagram"
-  alt="content" // Add a meaningful description here
+  alt="Markdown Previewer" // Add a meaningful description here
 />
 </div>
   )
