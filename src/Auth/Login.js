@@ -72,7 +72,6 @@ function Login() {
             <Form.Text className="text-muted">
                 We'll never share your email with anyone else.
               </Form.Text>
-  
               <Form.Label>Email address</Form.Label>
               
               <Form.Control 
